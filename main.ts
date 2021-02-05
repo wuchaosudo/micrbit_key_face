@@ -1,6 +1,6 @@
 input.onButtonPressed(Button.A, function () {
     led.setBrightness(255)
-    soundExpression.happy.playUntilDone()
+    soundExpression.twinkle.playUntilDone()
     basic.showLeds(`
         . . # . .
         . # . . .
@@ -13,7 +13,7 @@ input.onButtonPressed(Button.A, function () {
 })
 input.onButtonPressed(Button.B, function () {
     led.setBrightness(255)
-    soundExpression.hello.play()
+    soundExpression.hello.playUntilDone()
     basic.showLeds(`
         . . # . .
         . . . # .
