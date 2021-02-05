@@ -1,6 +1,12 @@
 input.onButtonPressed(Button.A, function () {
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
     led.setBrightness(255)
-    soundExpression.twinkle.playUntilDone()
     basic.showLeds(`
         . . # . .
         . # . . .
@@ -8,12 +14,18 @@ input.onButtonPressed(Button.A, function () {
         . # . . .
         . . # . .
         `)
-    basic.pause(1000)
+    soundExpression.twinkle.playUntilDone()
     led.setBrightness(0)
 })
 input.onButtonPressed(Button.B, function () {
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
     led.setBrightness(255)
-    soundExpression.hello.playUntilDone()
     basic.showLeds(`
         . . # . .
         . . . # .
@@ -21,7 +33,7 @@ input.onButtonPressed(Button.B, function () {
         . . . # .
         . . # . .
         `)
-    basic.pause(1000)
+    soundExpression.hello.playUntilDone()
     led.setBrightness(0)
 })
 led.setBrightness(255)
